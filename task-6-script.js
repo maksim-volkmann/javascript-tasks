@@ -2,7 +2,7 @@
 
 const myObj = {
   a: 'keyA',
-  // b: 'keyB',
+  b: 'keyB',
   c: 'keyC',
 }
 
@@ -10,12 +10,10 @@ const myStr = 'b'
 
 function testMyProperty(myObj, myStr) {
   if (myObj.hasOwnProperty(myStr)) {
-    // console.log('true')
     return true
   } else {
-    // console.log('false')
     return false
   }
 }
 
-testMyProperty(myObj, myStr)
+console.log(testMyProperty(myObj, myStr))
